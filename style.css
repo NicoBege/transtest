@@ -1,13 +1,29 @@
+body {
+    background-color: grey;
+    height: 100dvh;
+    width: 100dvw;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
 .spreadsheet {
   height: 50dvh;
+  background-color: white;
   display: grid;
   grid-template-rows: 3fr 1fr;
-  grid-template-columns: repeat(15, 20dvw);
+  grid-template-columns: repeat(19, 20dvw);
   place-items: center;
+  overflow-x: auto;
 }
 
 .btn {
-  grid-row: 2 / 3;
+    min-width: 20dvw;
+    grid-row: 2 / 3;
 }
 
 .colContent {

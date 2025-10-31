@@ -32,13 +32,16 @@ wrapper.addEventListener('scroll', () => {
         const endCol = debCol + colWidth;
         // console.log(debCol);
         const selectContent = document.querySelector('.colContent[data-col="' + col.id + '"]');
+        const selectLeg = document.querySelector('.colLeg[data-col="' + col.id + '"]');
         // console.log(selectContent);
         if(selectContent) {
             // console.log(selectContent);
             if((wrapper.scrollLeft >= debCol - 10) && (wrapper.scrollLeft < endCol - 10)) {
                 selectContent.classList.add('colVisible');
+                selectLeg.classList.add('colVisible');
             } else {
                 selectContent.classList.remove('colVisible');
+                selectLeg.classList.remove('colVisible');
             }
         }
     })

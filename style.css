@@ -15,7 +15,7 @@ main {
   height: 50dvh;
   background-color: white;
   display: grid;
-  grid-template-rows: 3fr 1fr;
+  grid-template-rows: 3fr 1fr 3fr;
   grid-template-columns: repeat(19, 20dvw);
   place-items: center;
   overflow-x: auto;
@@ -33,6 +33,13 @@ main {
   height: 100%;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+}
+
+.colLeg {
+    grid-row: 3 / 4;
+    color: blue;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .colVisible {
